@@ -9,9 +9,9 @@ public class Diretor extends Funcionario implements Autenticavel{
 		this.senhaDiretor = senhaDiretor;
 	}
 	public void setSenhaDiretor(String senhaDiretor) {
-		while(senhaDiretor.lenght() < 8) {
+		while(senhaDiretor.length() < 8) {
 			System.out.println("Senha possui menos de 8 digitos, digite novamente, "
-					+ "digite novamente:")
+					+ "digite novamente:");
 			senhaDiretor = input.next();
 		}
 		this.senhaDiretor = senhaDiretor;

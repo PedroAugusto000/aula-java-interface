@@ -12,10 +12,10 @@ public class Gerente extends Funcionario implements Autenticavel{
 	}
 	
 	public boolean autentica(String senhaDigitada) {
-		return this.getSenha().eqauls(senhaDigitada);
+		return this.getSenha().equals(senhaDigitada);
 	}
 	
-	public String toStirng() {
+	public String toString() {
 		return String.format("=====GERENTE=====\n"
 				+ "%s"
 				+ "Senha:%s\n", super.toString(), this.getSenha());
